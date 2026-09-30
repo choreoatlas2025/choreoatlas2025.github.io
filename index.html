@@ -41,12 +41,17 @@
     <p class="lead">Run a small, reproducible example: compare a recorded order trace with a FlowSpec contract, then inspect the passing order and failed payment reports. The sample traces and contracts are public.</p>
     <p class="lead zh" lang="zh-CN">用公开的订单轨迹和 FlowSpec 契约，亲自生成一次通过、一次失败的校验报告，看看跨服务流程哪里偏离预期。</p>
     <a class="cta" href="https://github.com/choreoatlas2025/quickstart-demo">Run the two-trace demo / 运行演示 →</a>
-    <h2>Try it locally</h2>
+    <h2>See the actual output first</h2>
+    <div class="links">
+      <a class="card" href="/reports/successful-order-report.html"><strong>Passing order report</strong><span>Five flow steps pass; inspect the skipped input preconditions.</span></a>
+      <a class="card" href="/reports/failed-payment-report.html"><strong>Failed payment report</strong><span>See the failed gate and the conditions behind it.</span></a>
+    </div>
+    <h2>Reproduce it locally</h2>
     <p class="note">Requires Git, Docker and Make. The demo uses a pinned Community Edition beta image and prerecorded sample traces.</p>
     <pre><code>git clone https://github.com/choreoatlas2025/quickstart-demo.git
 cd quickstart-demo
 make demo</code></pre>
-    <p class="note">Open <code>reports/successful-order-report.html</code> and <code>reports/failed-payment-report.html</code>. In the current sample, five flow steps pass in the successful trace; the failed payment trace fails the gate. Some input preconditions are skipped because the sample trace lacks the required input fields, so inspect the condition details before applying it to your system.</p>
+    <p class="note">The sample uses prerecorded traces. In the successful trace, five flow steps pass; the failed payment trace fails the gate. Some input preconditions are skipped because the sample lacks those fields. Inspect the condition details before applying this to your system.</p>
     <h2>Go further</h2>
     <div class="links">
       <a class="card" href="/docs/guide/getting-started"><strong>Getting started</strong><span>Repeat the example and read the report fields.</span></a>
