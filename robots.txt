@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cq365.eu.org/sitemap.xml
